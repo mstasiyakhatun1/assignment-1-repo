@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.fira-sans-normal {
+    font-family: "Fira Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  /* Nav styles */
+  nav ul{
+      display: flex;
+      margin-right: 100px;
+  }
+  nav ul li{
+    list-style: none;
+  }
+  nav li a{
+    text-decoration: none;
+    justify-content: space-evenly;
+  }
+  .btn{
+    Font: Fira Sans
+    Font weight: 600
+    Font size: 12px
+    Row height: 22px
+    Letter spacing: 0%
+    Align: Align left
+    rgb(0, 106, 80)
+    }
+#paragraph{
+    color: rgba(14, 14, 14, 0.5);
+    font-size: 16px;
+}
+#heading{
+    font-size: 37px;
+}
+#button{
+/* Frame 2 */
+position: static;
+width: 250px;
+height: 36px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 28;
+padding: 8px 16px 8px 16px;
+
+
+/* Inside Auto Layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 10px 0px;
+background-color: green;
+color: white;
+border-radius: 5px;
+}
+.div-box{
+  border: 1px solid white;
+  border-radius: 16px;
+  background: rgb(198, 228, 214);
+  display: flex;
+}
