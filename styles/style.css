@@ -66,3 +66,53 @@ border-radius: 5px;
   background: rgb(198, 228, 214);
   display: flex;
 }
+.div-future{
+  border: 1px solid white;
+  display: flex;
+  position: static;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px 14px;
+}
+ #div-container1{
+  float: left;
+  width: 274px;
+  height: 215px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: rgba(84, 144, 245, 0.2);
+  padding: 10px;
+ }
+#div-container2{
+  float: left;
+  width: 274px;
+  height: 215px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: rgb(198, 228, 214);
+  padding: 10px;
+}
+#div-container3{
+  float: left;
+  width: 274px;
+  height: 215px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: rgb(247, 235, 207);
+  padding: 10px;
+}
+#learn1{
+  border-radius: 5px;
+  background: rgb(84, 144, 245);
+  color: white;
+}
+#learn2{
+  border-radius: 5px;
+  background: rgb(9, 161, 92);
+  color: white;
+}
+#learn3{
+  border-radius: 5px;
+  background: rgb(255, 194, 57);
+  color: white;
+}
