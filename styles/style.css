@@ -22,13 +22,14 @@
     justify-content: space-evenly;
   }
   .btn{
-    Font: Fira Sans
-    Font weight: 600
-    Font size: 12px
-    Row height: 22px
-    Letter spacing: 0%
-    Align: Align left
-    rgb(0, 106, 80)
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 106, 80);
+    border-radius: 5px;
+    padding: 10px 14px 10px 14px;
+    font-size: 16px;
+    font-family: Work Sans;
+    font-weight: 600;
+    color: rgb(0, 106, 80);
     }
 #paragraph{
     color: rgba(14, 14, 14, 0.5);
@@ -37,34 +38,35 @@
 #heading{
     font-size: 37px;
 }
-#button{
-/* Frame 2 */
-position: static;
-width: 250px;
-height: 36px;
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 28;
-padding: 8px 16px 8px 16px;
+  #button{
+    /* Frame 2 */
+    position: static;
+    width: 250px;
+    height: 36px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 28;
+    padding: 8px 16px 8px 16px;
+    
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px 0px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    }
 
-
-/* Inside Auto Layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 10px 0px;
-background-color: green;
-color: white;
-border-radius: 5px;
-}
 .div-box{
   border: 1px solid white;
   border-radius: 16px;
   background: rgb(198, 228, 214);
   display: flex;
+  margin: 10px 20px;
 }
 .div-future{
   border: 1px solid white;
@@ -73,7 +75,7 @@ border-radius: 5px;
   justify-content: flex-start;
   align-items: flex-start;
   margin: 0px 14px;
-}
+  }
  #div-container1{
   float: left;
   width: 274px;
@@ -104,17 +106,36 @@ border-radius: 5px;
 #learn1{
   border-radius: 5px;
   background: rgb(84, 144, 245);
-  color: white;
+  color: rgb(255, 255, 255);
+  padding: 14px 18px 14px 18px;
+  font-family: Work Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 10px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
 }
 #learn2{
   border-radius: 5px;
   background: rgb(9, 161, 92);
-  color: white;
+  color: rgb(255, 255, 255);
+  padding: 14px 18px 14px 18px;
+  font-size: 12px;
+  font-family: Work Sans;
+  font-weight: 600;
+  border: none;
 }
 #learn3{
   border-radius: 5px;
   background: rgb(255, 194, 57);
-  color: white;
+  color: rgb(255, 255, 255);
+  padding: 14px 18px 14px 18px;
+  font-size: 12px;
+  font-family: Work Sans;
+  font-weight: 600;
+  border: none;
 }
 
 .div-news{
@@ -125,21 +146,13 @@ height: 270px;
 /* Auto layout */
 display: flex;
 flex-direction: row;
-justify-content: flex-start;
 align-items: center;
 gap: 32;
-padding: 48px;
-
-
-/* Inside Auto Layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-margin: 24px 0px;
+padding: 20px 30px 20px 30px ;
+margin: 10px 20px;
 border-radius: 24px;
 background: rgb(255, 255, 255);
-border: 2px solid black;
+border: 1px solid black;
 }
 #satelite1{
   border: 2px solid black;
@@ -153,4 +166,55 @@ border: 2px solid black;
   height: 205px;
   border-radius: 16px;
   display: flex;
+}
+.btn-box{
+  padding: 14px 18px 14px 18px;
+  color: rgb(255, 255, 255);
+  font-family: Work Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 10px;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 5px;
+  background: rgb(0, 106, 80);
+  border: none;
+}
+.btn-box:hover{
+  background-color: gray;
+}
+.donate-box{
+    padding: 15px 25px;
+    border: 1px solid wheat;
+    border-radius: 8px;
+    background: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.donate-box:hover{
+  background-color: aliceblue;
+}
+.donate-box-color{
+  padding:15px 25px;
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 10px;
+  font-size: 30px;
+  background: rgb(198, 228, 214);
+  cursor: pointer;
+}
+.donate-box-color:hover{
+  background-color: aliceblue;
+}
+.input{
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+input[type="text"]{
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
 }
