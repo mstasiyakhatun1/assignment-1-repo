@@ -1,10 +1,14 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .container{
   width: 90%;
   margin: 0 auto;
+}
+body{
+  background-color: #f5f5f5;
 }
 .fira-sans-normal {
     font-family: "Fira Sans", serif;
@@ -13,21 +17,11 @@
     font-variation-settings:
       "wdth" 100;
   }
-  /* Nav styles */
-  /* nav ul{
-      display: flex;
-      margin-right: 100px;
-  }
-  nav ul li{
-    list-style: none;
-  }
-  nav li a{
-    text-decoration: none;
+  .nav{
     display: flex;
-    justify-content: center;
     align-items: center;
-    
-  } */
+    justify-content: space-between;
+  }
   .btn{
     box-sizing: border-box;
     border: 1px solid rgb(0, 106, 80);
@@ -46,26 +40,20 @@
     font-size: 37px;
 }
   #button{
-    /* Frame 2 */
-    position: static;
-    width: 250px;
-    height: 36px;
-    /* Auto layout */
+    width: 200px;
+    height: 50px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 28;
-    padding: 8px 16px 8px 16px;
-    
-    /* Inside Auto Layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 10px 0px;
+    padding: 20px 8px 20px 8px;
+    margin: 10px 20px;
     background-color: green;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
+    }
+    #button:hover {
+      background-color: gray;
     }
 
 .div-box{
@@ -76,39 +64,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
+  padding: 20px;
 }
 .div-future{
   border: 1px solid white;
   display: flex;
   position: static;
+  justify-content: space-between;
   align-items: center;
   margin: 10px 14px;
   gap: 20px;
   }
  #div-container1{
-  width: 274px;
-  height: 215px;
   box-sizing: border-box;
   border-radius: 10px;
   background: rgba(84, 144, 245, 0.2);
-  padding: 10px;
+  padding: 30px;
  }
 #div-container2{
-  width: 274px;
-  height: 215px;
   border-radius: 10px;
   box-sizing: border-box;
   background: rgb(198, 228, 214);
-  padding: 10px;
+  padding: 30px;
 }
 #div-container3{
-  width: 274px;
-  height: 215px;
   border-radius: 10px;
   box-sizing: border-box;
   background: rgb(247, 235, 207);
-  padding: 10px;
+  padding: 30px;
 }
 #learn1{
   border-radius: 5px;
@@ -144,13 +127,19 @@
   font-weight: 600;
   border: none;
 }
-
+#learn1:hover {
+  background-color: gray;
+}
+#learn2:hover {
+  background-color: gray;
+}
+#learn3:hover {
+  background-color: gray;
+}
 .div-news{
-  /* Frame 2087325509 */
 position: static;
-width: 80%;
+width: 100%;
 height: 270px;
-/* Auto layout */
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -189,7 +178,7 @@ border: 1px solid black;
 }
 
 .btn-box:hover{
-  background-color: gray;
+  background-color:gray;
 }
 #donate{
   display: flex;
@@ -199,6 +188,7 @@ border: 1px solid black;
   gap: 10px;
 }
 .donate-box{
+    font-weight: 600;
     padding: 15px 25px;
     border: 1px solid wheat;
     border-radius: 8px;
@@ -210,6 +200,7 @@ border: 1px solid black;
   background-color: aliceblue;
 }
 .donate-box-color{
+  font-weight: 600;
   padding:15px 25px;
   box-sizing: border-box;
   border: 1px solid rgba(14, 14, 14, 0.15);
@@ -249,22 +240,32 @@ input[type="text"]{
   background-color: #d1e7d4;
   border-radius: 20px;
   padding: 40px 20px;
-  width: 100%;
-  max-width: 90%;
-  margin: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  margin: 20px 40px;
 }
 .input2{
   width: 80%;
   margin: 0 auto;
   display: flex;
 }
+.input2 input{
+  border: none;
+  outline: none;
+  border-radius: 15px 0 0 15px;
+  padding: 20px;
+}
+.newslaterbtn{
+  border-radius: 0 15px 15px 0;
+  padding: 20px;
+}
 #cotation{
     background: url("/assets/quote-bg.png") no-repeat;
-    background-color: aquamarine;
+    background-color: white;
     width: 90%;
     border-radius: 5px;
     margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
 }
 #opacity{
   color: rgba(14, 14, 14, 0.8);
