@@ -53,6 +53,8 @@ body{
     background-color: green;
     color: white;
     border-radius: 10px;
+    border: none;
+    outline: none;
     }
     #button:hover {
       background-color: gray;
@@ -153,7 +155,6 @@ background: rgb(255, 255, 255);
 
 }
 #satelite1{
-  border: 2px solid black;
   width: 270px;
   height: 205px;
   border-radius: 16px;
